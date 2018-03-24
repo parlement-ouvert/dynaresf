@@ -24,3 +24,9 @@ jupyter lab
 The new system build of the preprocessor is not yet official.
 
 In the mean time, you can download it from [Stéphane Adjemian personal site](https://dynare.adjemian.eu/preprocessor/).
+
+Extract `dynare_m` file to repository. Then test it:
+```bash
+./dynare_m model.mod
+./clean.sh
+```

@@ -3,4 +3,5 @@
 *.mat
 *.RData
 .ipynb_checkpoints/
+dynare_m
 /model/
