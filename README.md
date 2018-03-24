@@ -6,4 +6,4 @@ Un projet de loi de finances annuel contient toujours un [rapport économique so
 
 DynaRESF vise à rendre interactif les chapitres du RESF consacrés aux _perspectives économiques_ et aux _perspectives des finances publiques_.
 
-DynaRESF prend la forme d'un _notebook_ [JupyterLab](http://jupyterlab.readthedocs.io/).
+DynaRESF prend la forme d'un ensemble de _notebooks_ [JupyterLab](http://jupyterlab.readthedocs.io/).
