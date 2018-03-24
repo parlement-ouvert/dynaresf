@@ -18,6 +18,7 @@ package("readxl")
 
 setwd("/var/www/dynaresf")
 
+# Source INSEE: https://www.insee.fr/fr/statistiques/fichier/2496716/irsocprojpop1370_FECcentESPcentMIGcent.xls
 import_detail <- function() {
   pop_future_detail <- read_xls("future population francaise par age - INSEE.xls", sheet=2, col_names=FALSE)[-(1:4),]
   pop_future_detail[1,1] <- "age"
