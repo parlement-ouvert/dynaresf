@@ -1,1 +1,6 @@
+*.log
+*.m
+*.mat
 *.RData
+.ipynb_checkpoints/
+/model/
