@@ -2,6 +2,23 @@
 
 ## Installation on Debian Testing
 
+### JupyterLab Installation
+
+Cf:
+* http://jupyter.org/install
+* http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
+
+As user:
+```bash
+python3 -m pip install jupyter
+python3 -m pip install jupyterlab
+```
+
+Start JupyterLab using:
+```bash
+jupyter lab
+```
+
 ### Dynare Installation
 
 Cf https://github.com/DynareTeam/dynare/tree/master
@@ -163,21 +180,4 @@ octave --eval "addpath /usr/local/lib/dynare/matlab/; dynare model.mod"
 To cleanup generated files:
 ```bash
 ./clean.sh
-```
-
-### JupyterLab Installation
-
-Cf:
-* http://jupyter.org/install
-* http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
-
-As user:
-```bash
-python3 -m pip install jupyter
-python3 -m pip install jupyterlab
-```
-
-Start JupyterLab using:
-```bash
-jupyter lab
 ```
