@@ -45,18 +45,9 @@ git clone https://framagit.org/parlement-ouvert/dynaresf.git
 
 ## DynaRESF Usage
 
-As user:
 ```bash
 cd dynaresf/
 octave --eval "addpath /usr/local/lib/dynare/matlab/; dynare model.mod"
-
-    warning: This version of Octave is not supported. Consider installing version 4.2.1 of Octave,
-    otherwise m files will be used instead of precompiled mex files and some features, like solution
-    of models approximated at third order, will not be available.
-    warning: called from
-        dynare_config at line 99 column 5
-        dynare at line 69 column 12
-
     warning: function /usr/local/lib/dynare/matlab/missing/corrcoef/tcdf.m shadows a core library function
     warning: called from
         dynare_config at line 142 column 1
