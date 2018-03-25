@@ -1,16 +1,18 @@
-> Retruco-API -- HTTP API to bring out shared positions from argumented statements
-> By: Paula Forteza <paula@retruco.org>
->     Emmanuel Raviart <emmanuel@retruco.org>
+> DynaRESF -- Rapport économique social et financier (RESF) dynamique
+> By: Stéphane Adjemian <stepan@dynare.org>
+>     Thomas Brand <thomas.brand@cepremap.org>
+>     Adrien Fabre <psemail.eu>
+>     Emmanuel Raviart <emmanuel@raviart.com>
 >
-> Copyright (C) 2016, 2017 Paula Forteza & Emmanuel Raviart
-> https://framagit.org/retruco/retruco-api
+> Copyright (C) 2018 DynaRESF authors
+> https://framagit.org/parlement-ouvert/dynaresf
 >
-> Retruco-API is free software; you can redistribute it and/or modify
+> DynaRESF is free software; you can redistribute it and/or modify
 > it under the terms of the GNU Affero General Public License as
 > published by the Free Software Foundation, either version 3 of the
 > License, or (at your option) any later version.
 >
-> Retruco-API is distributed in the hope that it will be useful,
+> DynaRESF is distributed in the hope that it will be useful,
 > but WITHOUT ANY WARRANTY; without even the implied warranty of
 > MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 > GNU Affero General Public License for more details.
