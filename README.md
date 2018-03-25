@@ -14,4 +14,4 @@ Techniquement, il prend la forme  d'un ensemble de _notebooks_ [JupyterLab](http
 
 DynaRESF est un projet en **cours de réalisation**.
 
-DynaRESF est basé uniquement sur des logiciels libres et des données publiques (_open data_). Il s'inscrit dans le mouvement de la [science reproductible](https://www.nature.com/articles/s41562-016-0021).
+DynaRESF est un [logiciel libre](LICENSE.md) basé uniquement sur des données publiques (_open data_). Il s'inscrit dans le mouvement de la [science reproductible](https://www.nature.com/articles/s41562-016-0021).
