@@ -181,3 +181,9 @@ To cleanup generated files:
 ```bash
 ./clean.sh
 ```
+
+## Building DynaRESF Dockerfile
+
+```bash
+docker build -t "DynaRESF:Dockerfile" .
+```
