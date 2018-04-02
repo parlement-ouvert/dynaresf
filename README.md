@@ -2,7 +2,7 @@
 
 > Un rapport économique social et financier (RESF) dynamique
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master?urlpath=lab/tree/home/jovyan)
 
 Un projet de loi de finances annuel contient toujours un [rapport économique social et financier](https://www.performance-publique.budget.gouv.fr/sites/performance_publique/files/farandole/ressources/2018/pap/pdf/RESF18.pdf).
 
