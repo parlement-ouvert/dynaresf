@@ -3,6 +3,9 @@
 FROM cepremap/dynare-jupyter:testing
 LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
+# Install Python3 packages missing from `cepremap/dynare-jupyter` Docker image.
+RUN python3 -m pip install --no-cache-dir altair
+
 # Set up a user whose uid is 1000.
 ENV NB_USER jovyan
 ENV NB_UID 1000
