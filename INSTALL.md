@@ -182,27 +182,12 @@ To cleanup generated files:
 ./clean.sh
 ```
 
-## Building Dockerfile containing both Dynare & Jupyter (Lab)
-
-```bash
-docker build -t cepremap/dynare-jupyter .
-# Or, alternatively, to force rebuild:
-docker build --no-cache -t cepremap/dynare-jupyter .
-
-docker tag cepremap/dynare-jupyter cepremap/dynare-jupyter:testing
-
-docker login
-    Username: eraviart
-    Password: XXXX
-    Login Succeeded
-
-docker push cepremap/dynare-jupyter:testing
-```
-
 ## Building DynaRESF Dockerfile
 
 ```bash
 docker build -t "DynaRESF:Dockerfile" ./binder
+# Or, alternatively, to force rebuild:
+docker build --no-cache -t -t "DynaRESF:Dockerfile" ./binder
 ```
 
 ## Updating and accessing to Binder project
