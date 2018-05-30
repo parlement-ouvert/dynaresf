@@ -182,12 +182,14 @@ To cleanup generated files:
 ./clean.sh
 ```
 
-## Building DynaRESF Dockerfile
+## Building and Running DynaRESF Dockerfile
 
 ```bash
-docker build -t "DynaRESF:Dockerfile" ./binder
+docker build -t parlement-ouvert/dynaresf .
 # Or, alternatively, to force rebuild:
-docker build --no-cache -t -t "DynaRESF:Dockerfile" ./binder
+docker build --no-cache -t parlement-ouvert/dynaresf .
+
+docker run -p8888:8888 parlement-ouvert/dynaresf
 ```
 
 ## Updating and accessing to Binder project
