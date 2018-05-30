@@ -186,14 +186,17 @@ To cleanup generated files:
 
 ```bash
 docker build -t cepremap/dynare-jupyter .
-docker tag cepremap/dynare-jupyter cepremap/dynare-jupyter:stable
+# Or, alternatively, to force rebuild:
+docker build --no-cache -t cepremap/dynare-jupyter .
+
+docker tag cepremap/dynare-jupyter cepremap/dynare-jupyter:testing
 
 docker login
     Username: eraviart
     Password: XXXX
     Login Succeeded
 
-docker push cepremap/dynare-jupyter:stable
+docker push cepremap/dynare-jupyter:testing
 ```
 
 ## Building DynaRESF Dockerfile
@@ -210,4 +213,4 @@ Push latest version of project to GitHub
 git push github
 ```
 
-Execute it using Binder: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master?filepath=%2Fhome%2Fjovyan%2Fdynaresf.ipynb)
+Execute it using Binder: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master?urlpath=lab%2Ftree%2Fhome%2Fjovyan%2Fdynaresf.ipynb)

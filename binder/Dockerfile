@@ -1,6 +1,6 @@
 # Cf https://mybinder.readthedocs.io/en/latest/dockerfile.html
 
-FROM cepremap/dynare-jupyter:stable
+FROM cepremap/dynare-jupyter:testing
 LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
 # Set up a user whose uid is 1000.

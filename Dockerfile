@@ -1,13 +1,12 @@
-FROM debian:stretch
+FROM debian:testing
 LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
 # Install Dynare
-RUN echo "deb-src http://deb.debian.org/debian stretch main" >>/etc/apt/sources.list
-RUN echo "deb-src http://deb.debian.org/debian stretch-updates main" >>/etc/apt/sources.list
-RUN echo "deb-src http://security.debian.org stretch/updates main" >>/etc/apt/sources.list
+RUN echo "deb-src http://deb.debian.org/debian testing main" >>/etc/apt/sources.list
+RUN echo "deb-src http://security.debian.org testing/updates main" >>/etc/apt/sources.list
 RUN apt-get update
-RUN apt-get --no-install-recommends -y build-dep dynare
-RUN apt-get -y install bison ca-certificates flex gawk git libfl-dev
+RUN apt-get build-dep --no-install-recommends -y dynare
+RUN apt-get install -y bison ca-certificates flex gawk git libfl-dev
 RUN git clone --recursive https://github.com/DynareTeam/dynare.git
 WORKDIR "/dynare"
 RUN autoreconf -si
