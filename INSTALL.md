@@ -200,4 +200,4 @@ Push latest version of project to GitHub
 git push github
 ```
 
-Execute it using Binder: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master?urlpath=lab%2Ftree%2Fhome%2Fjovyan%2Fdynaresf.ipynb)
+Execute it using Binder: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master?urlpath=lab%2Ftree%2Fhome%2Fjovyan%2Fdynaresf.ipynb). The project is in `/home/jovyan` directory.

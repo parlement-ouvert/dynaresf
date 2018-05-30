@@ -1,7 +1,7 @@
 # Cf https://mybinder.readthedocs.io/en/latest/dockerfile.html
 
 # Cf https://hub.docker.com/r/cepremap/dynare-jupyter/tags/ for the latest version
-FROM cepremap/dynare-jupyter:v0.1.2
+FROM cepremap/dynare-jupyter:v0.1.3
 LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
 # Install Python3 packages missing from `cepremap/dynare-jupyter` Docker image.
