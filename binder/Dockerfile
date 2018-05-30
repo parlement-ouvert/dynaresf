@@ -13,9 +13,10 @@ RUN adduser --disabled-password \
     ${NB_USER}
 
 # Make sure the contents of our repo are in ${HOME}
-# COPY . ${HOME}
-# USER root
-# RUN chown -R ${NB_UID} ${HOME}
+COPY dynaresf.ipynb ${HOME}/
+COPY model.mod ${HOME}/
+USER root
+RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
 # Specify the default command to run.
