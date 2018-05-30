@@ -1,5 +1,6 @@
 # Cf https://mybinder.readthedocs.io/en/latest/dockerfile.html
 
+# Cf https://hub.docker.com/r/cepremap/dynare-jupyter/tags/ for the latest version
 FROM cepremap/dynare-jupyter:v0.1.2
 LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
@@ -20,7 +21,8 @@ RUN adduser --disabled-password \
     ${NB_USER}
 
 # Make sure the contents of our repo are in ${HOME}
-COPY dynaresf.ipynb ${HOME}/
+COPY *.ipynb ${HOME}/
+COPY *.mod ${HOME}/
 COPY model.mod ${HOME}/
 USER root
 RUN chown -R ${NB_UID} ${HOME}
