@@ -201,3 +201,13 @@ docker push cepremap/dynare-jupyter:stable
 ```bash
 docker build -t "DynaRESF:Dockerfile" ./binder
 ```
+
+## Updating and accessing to Binder project
+
+Push latest version of project to GitHub
+```bash
+[...]
+git push github
+```
+
+Execute it using Binder: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/parlement-ouvert/dynaresf/master?filepath=%2Fhome%2Fjovyan%2Fdynaresf.ipynb)
