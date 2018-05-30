@@ -1,10 +1,14 @@
 # Cf https://mybinder.readthedocs.io/en/latest/dockerfile.html
 
-FROM cepremap/dynare-jupyter:v0.1.0
+FROM cepremap/dynare-jupyter:v0.1.2
 LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
 # Install Python3 packages missing from `cepremap/dynare-jupyter` Docker image.
 RUN python3 -m pip install --no-cache-dir altair
+
+# Install R packages missing from `cepremap/dynare-jupyter` Docker image.
+# Allow jovyan user to install its own packages.
+RUN chmod go+rw /usr/local/lib/R/site-library
 
 # Set up a user whose uid is 1000.
 ENV NB_USER jovyan
