@@ -182,8 +182,22 @@ To cleanup generated files:
 ./clean.sh
 ```
 
+## Building Dockerfile containing both Dynare & Jupyter (Lab)
+
+```bash
+docker build -t cepremap/dynare-jupyter .
+docker tag cepremap/dynare-jupyter cepremap/dynare-jupyter:stable
+
+docker login
+    Username: eraviart
+    Password: XXXX
+    Login Succeeded
+
+docker push cepremap/dynare-jupyter:stable
+```
+
 ## Building DynaRESF Dockerfile
 
 ```bash
-docker build -t "DynaRESF:Dockerfile" .
+docker build -t "DynaRESF:Dockerfile" ./binder
 ```
