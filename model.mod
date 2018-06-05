@@ -35,5 +35,9 @@ datafipu = dseries('data.csv');
 
 initdata = dseries([datafipu{'debt_gdp'}.data(end), datafipu{'expenditures_gdp'}.data(end), 1, 1-is-datafipu{'expenditures_gdp'}.data(end), is], datafipu.last+1, {'dt'; 'expt'; 'yt'; 'ct'; 'it'});
 SimulData = simul_backward_model(initdata, 40);
-struct_SimulData = struct(SimulData);
-save data.mat struct_SimulData
+
+SimulData = struct(SimulData);
+SimulDatatime = struct(SimulData.dates);
+
+save simuldata.mat SimulData
+save simuldatatime.mat SimulDatatime
