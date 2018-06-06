@@ -6,8 +6,16 @@ LABEL maintainer="dynaresf@parlement-ouvert.fr"
 
 # Install Python3 packages missing from `cepremap/dynare-jupyter` Docker image.
 RUN python3 -m pip install --no-cache-dir altair
+RUN python3 -m pip install --no-cache-dir ipywidgets
+RUN jupyter nbextension enable --py widgetsnbextension
+RUN apt-get install -y curl gnupg2
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get install -y nodejs
+RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
+RUN jupyter lab build
 
 # Install R packages missing from `cepremap/dynare-jupyter` Docker image.
+RUN R -e "devtools::install_github('rstudio/reticulate')"
 # Allow jovyan user to install its own packages.
 RUN chmod go+rw /usr/local/lib/R/site-library
 
@@ -23,7 +31,6 @@ RUN adduser --disabled-password \
 # Make sure the contents of our repo are in ${HOME}
 COPY *.ipynb ${HOME}/
 COPY *.mod ${HOME}/
-COPY model.mod ${HOME}/
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
